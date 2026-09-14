@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "n_figures": 6,
+  "figures": [
+    {
+      "name": "figure_1_protocol_effects",
+      "png": "08_figures\\figure_1_protocol_effects.png",
+      "pdf": "08_figures\\figure_1_protocol_effects.pdf",
+      "dpi": 300,
+      "source_csvs": [
+        "09_tables/table_modelwise_effects.csv"
+      ],
+      "caption": "Protocol effects by dataset and model; repeated seeds averaged within participant. Participant bootstrap 95% intervals.",
+      "png_sha256": "da390f3c9f9df81aed3985f9f16f81d51c4461ae4398f6a88641480bc3725db7",
+      "pdf_sha256": "06299e4461d67bf495fc5bce613719d871d643d889673e8e4a6aac1e06b140d5"
+    },
+    {
+      "name": "figure_2_calibration",
+      "png": "08_figures\\figure_2_calibration.png",
+      "pdf": "08_figures\\figure_2_calibration.pdf",
+      "dpi": 300,
+      "source_csvs": [
+        "09_tables/table_model_summary.csv"
+      ],
+      "caption": "Raw, temperature-scaled, and isotonic probability quality. Equal participant weights after within-participant seed averaging; adverse calibration results retained.",
+      "png_sha256": "341bbaa68fbad73afe6476c1f9c685cae78d0dc0e4430d81c4e067926c78a742",
+      "pdf_sha256": "25f07260c4d30bf83f54d0eb93e904c27bfc10c788772d264aa06608cebe0b36"
+    },
+    {
+      "name": "figure_3_selective_risk_coverage",
+      "png": "08_figures\\figure_3_selective_risk_coverage.png",
+      "pdf": "08_figures\\figure_3_selective_risk_coverage.pdf",
+      "dpi": 300,
+      "source_csvs": [
+        "09_tables/table_selective_summary.csv"
+      ],
+      "caption": "Risk versus achieved retention at six frozen calibration thresholds, with the actual full-risk endpoint. Risks are available-participant means; availability counts remain in the source table.",
+      "png_sha256": "f719d0edd57f09804226eae69fe0090157be58e2785346f1dc67c23c8a73ee9e",
+      "pdf_sha256": "05a80a9bbea9127974a643e6ce38a31d0346655cb3a59d17d4de417a83a6e033"
+    },
+    {
+      "name": "figure_4_aps_coverage_size",
+      "png": "08_figures\\figure_4_aps_coverage_size.png",
+      "pdf": "08_figures\\figure_4_aps_coverage_size.pdf",
+      "dpi": 300,
+      "source_csvs": [
+        "09_tables/table_conformal_summary.csv"
+      ],
+      "caption": "Raw nonrandomized APS coverage and size under subject-disjoint evaluation. Dashed lines denote nominal coverage, not a guarantee under participant shift. Empty sets are retained.",
+      "png_sha256": "6f103ef865a0a6a523adec7ea8c87a5e2c1013b1eca665b00ea044f62387de5d",
+      "pdf_sha256": "5ba4975f6ad07eee19d27ece927ba67d942476890aee0e9c4d43bca2395654f9"
+    },
+    {
+      "name": "figure_5_seed_sensitivity",
+      "png": "08_figures\\figure_5_seed_sensitivity.png",
+      "pdf": "08_figures\\figure_5_seed_sensitivity.pdf",
+      "dpi": 300,
+      "source_csvs": [
+        "07_analysis/seed_effects.csv"
+      ],
+      "caption": "Split-seed effect distributions. Each point is an equal-dataset participant estimate for a fixed seed; seeds are sensitivity repeats, not independent participants.",
+      "png_sha256": "4ec2ced6eae8414f108d434010426f0a25c7c1616cc77fa3b2dbfd5fe369421a",
+      "pdf_sha256": "badf1fcf7449679852645b67a6a43c4659aa5b179f9a6efa3b074aea8e0e0a30"
+    },
+    {
+      "name": "figure_6_temporal_overlap_supplement",
+      "png": "08_figures\\figure_6_temporal_overlap_supplement.png",
+      "pdf": "08_figures\\figure_6_temporal_overlap_supplement.pdf",
+      "dpi": 300,
+      "source_csvs": [
+        "07_analysis/participant_metrics.csv"
+      ],
+      "caption": "Primary-seed UCI comparison using exact shared-window overlap components. This reduces verified overlap leakage; it does not reconstruct sessions or guarantee removal of temporal autocorrelation.",
+      "png_sha256": "369ff075342f19a97985342ad08ee16f2700c66b8a8c5f9e7d2943a5a8000e20",
+      "pdf_sha256": "fc4984ac27e31f5df4938de291fbc5f03fc070eebabfca128a9d3cd0419d9bca"
+    }
+  ],
+  "analysis_sha256": "97b8471015b4e29a947f5cf9263f8dd779224fd2a50c6c122fcc27d1b856425d",
+  "postprocess_source_sha256": "dd627105e505392f779cd02ee2105e73416a705b95c171678f12f42341872598",
+  "finished_utc": "2026-09-14T00:54:35.418822+00:00"
+}
