@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the associated manuscript and this repository."
+title: "Wearable HAR Reliability Audit: Reproducibility Materials"
+type: software
+authors:
+  - family-names: Cho
+    given-names: Yechan
+    affiliation: "Department of Artificial Intelligence, Gachon University"
+repository-code: "https://github.com/jych0601-jpg/wearable-har-reliability-audit"
+date-released: 2026-09-14
+license: MIT
+keywords:
+  - wearable sensors
+  - human activity recognition
+  - subject-disjoint evaluation
+  - probability calibration
+  - selective prediction
+  - conformal prediction

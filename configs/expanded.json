@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "seeds": [
+    20260911,
+    20260912,
+    20260913,
+    20260914,
+    20260915,
+    20260916,
+    20260917,
+    20260918,
+    20260919,
+    20260920
+  ],
+  "n_folds": 5,
+  "models": [
+    "logistic",
+    "random_forest",
+    "extra_trees",
+    "hist_gradient_boosting",
+    "cnn1d"
+  ],
+  "datasets": [
+    "uci_har",
+    "wisdm_watch_accel"
+  ],
+  "protocols": [
+    "sample_mixed",
+    "subject_disjoint"
+  ],
+  "target_coverages": [
+    1,
+    0.9,
+    0.8,
+    0.7,
+    0.6,
+    0.5
+  ],
+  "alpha": [
+    0.2,
+    0.1
+  ],
+  "bootstrap_draws": 5000,
+  "statistical_seed": 20260911,
+  "classical_n_jobs": 4,
+  "classical_workers": 2,
+  "deep": {
+    "channels": [
+      64,
+      128
+    ],
+    "kernel_size": 5,
+    "hidden": 128,
+    "dropout": 0.3,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 40,
+    "patience": 6,
+    "batch_size": 128,
+    "validation_fraction": 0.2
+  },
+  "frozen_before_additional_outcomes": true
+}

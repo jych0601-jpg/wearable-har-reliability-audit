@@ -1,0 +1,5 @@
+effect,estimate
+leakage_reduced_protocol_macro_f1,-0.024230135125722904
+leakage_reduced_protocol_brier,0.037080763884019895
+leakage_reduced_protocol_nll,0.08362849682125387
+leakage_reduced_protocol_ece_15,0.014208171911833068
