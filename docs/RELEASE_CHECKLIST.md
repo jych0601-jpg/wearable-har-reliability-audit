@@ -1,6 +1,6 @@
-# v1.0.0 release checklist
+# v1.0.1 release checklist
 
-This checklist defines the final repository state to archive on Zenodo for the manuscript
+This checklist defines the corrected final repository state to archive on Zenodo for the manuscript
 **Evaluation Protocol Changes Probability Reliability for New-User Wearable Human Activity Recognition**.
 
 ## Scientific evidence
@@ -30,15 +30,15 @@ This checklist defines the final repository state to archive on Zenodo for the m
 - [x] REPRODUCIBILITY.md references the actual public config paths.
 - [x] RESULT_PROVENANCE.md reflects that exact scientific source is already included.
 - [x] CITATION.cff is present.
-- [ ] Update CITATION.cff with v1.0.0 release date and Zenodo DOI after archival.
+- [ ] Update CITATION.cff with v1.0.1 release date and Zenodo DOI after archival.
 
 ## Final pre-release actions
 
 - [x] Confirm the manuscript's numerical claims still match the frozen public evidence.
 - [x] Run `python scripts/verify_public_results.py` in a clean environment.
 - [x] Confirm no accidental private/local files were added since the evidence freeze.
-- [ ] Create GitHub release/tag `v1.0.0`.
-- [ ] Archive `v1.0.0` on Zenodo.
+- [ ] Create GitHub release/tag `v1.0.1`.
+- [ ] Archive `v1.0.1` on Zenodo.
 - [ ] Record the version DOI in `CITATION.cff`.
 - [ ] Insert the Zenodo DOI into the manuscript Code availability / Data Availability text as appropriate.
 - [ ] Perform final manuscript render and submission audit.
