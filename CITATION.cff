@@ -7,7 +7,7 @@ authors:
     given-names: YeChan
     affiliation: "Department of Artificial Intelligence, Gachon University"
 repository-code: "https://github.com/jych0601-jpg/wearable-har-reliability-audit"
-version: "1.0.0"
+version: "1.0.1"
 date-released: 2026-09-21
 license: MIT
 keywords:
