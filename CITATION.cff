@@ -3,7 +3,7 @@ message: "If you use these materials, please cite the associated manuscript and 
 title: "Wearable HAR Reliability Audit: Reproducibility Materials"
 type: software
 authors:
-  - family-names: Cho
+  - family-names: Jo
     given-names: Yechan
     affiliation: "Department of Artificial Intelligence, Gachon University"
 repository-code: "https://github.com/jych0601-jpg/wearable-har-reliability-audit"
