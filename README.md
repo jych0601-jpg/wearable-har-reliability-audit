@@ -143,7 +143,7 @@ This script checks compact headline values. See the evidence-freeze manifests fo
 
 ## Release status
 
-The repository is currently in **pre-release preparation**. A `v1.0.0` GitHub release will be created after final repository checks and then archived on Zenodo. The resulting persistent DOI will be added to the manuscript and `CITATION.cff`.
+The repository is currently in **pre-release preparation** for the corrected archival release. A `v1.0.1` GitHub release will be created after final repository checks and then archived on Zenodo. The resulting persistent DOI will be added to the manuscript and `CITATION.cff`.
 
 ## License
 
@@ -151,4 +151,4 @@ Repository-authored code and documentation are released under the MIT License. T
 
 ## Citation
 
-Citation metadata are provided in `CITATION.cff`. A Zenodo DOI will be added after the `v1.0.0` release is archived.
+Citation metadata are provided in `CITATION.cff`. A Zenodo DOI will be added after the `v1.0.1` release is archived.
