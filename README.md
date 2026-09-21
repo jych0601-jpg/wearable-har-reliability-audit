@@ -1,6 +1,6 @@
 # Wearable HAR Reliability Audit
 
-Minimal public reproducibility materials for the manuscript:
+Public reproducibility materials for the manuscript:
 
 **Evaluation Protocol Changes Probability Reliability for New-User Wearable Human Activity Recognition**
 
@@ -16,7 +16,7 @@ The core comparison is:
 - **sample-mixed evaluation**
 - **subject-disjoint evaluation**
 
-The study evaluates discrimination, proper probability scores, calibration transfer, confidence-based selective prediction, and adaptive prediction sets.
+The study evaluates discrimination, proper probability scores, calibration transfer, confidence-based selective prediction, adaptive prediction sets, model-rank changes, and protocol-related confidence shifts.
 
 ## Public datasets
 
@@ -33,6 +33,7 @@ Please obtain the datasets from their official repositories and respect their or
 
 - 2 public datasets
 - 4 classical probabilistic classifiers
+- primary seed: **20260911**
 - 5 rotating folds
 - sample-mixed vs subject-disjoint evaluation
 - scalar temperature scaling
@@ -52,6 +53,16 @@ Please obtain the datasets from their official repositories and respect their or
 
 Repeated seeds are sensitivity repetitions and are not treated as independent participants.
 
+### Post-hoc / descriptive manuscript analyses
+
+The manuscript evidence freeze also contains clearly labelled secondary descriptive analyses of:
+
+- signed confidence gap (mean confidence minus accuracy),
+- protocol-related model-rank changes,
+- arithmetic decomposition of the UCI primary-seed contrast into an overlap-blocking step and a residual subject-disjoint step.
+
+These analyses are not added retrospectively to the original primary hypothesis family.
+
 ## Headline findings
 
 The pre-specified primary analysis found:
@@ -68,7 +79,7 @@ The 10-seed, five-model secondary expansion preserved the same protocol-effect d
 - NLL: **+0.5459**
 - ECE: **+0.0424**
 
-See `results/` for the auditable numeric tables.
+See `results/`, `tables/`, and `EVIDENCE_FREEZE_SUMMARY.md` for the manuscript-facing numerical evidence.
 
 ## Important interpretation
 
@@ -78,37 +89,49 @@ This repository supports an **evaluation-protocol audit**. It does not claim:
 - a new uncertainty algorithm,
 - universal calibration superiority,
 - participant-specific conformal coverage guarantees under user shift,
+- a causal decomposition of the protocol gap,
 - or clinical safety.
 
 UCI HAR uses 50% overlapping windows. The study therefore includes an overlap-reduced sensitivity analysis and interprets the main comparison as **protocol optimism**, which can combine represented-user similarity and temporal/window dependence.
 
 For WISDM, the CNN used raw temporal windows while the classical models used the transformed ARFF representation. The deep-model extension is therefore a representation sensitivity rather than a paired-window comparison.
 
+## Repository layout
+
+- `src/` — exact frozen V1 primary-analysis source
+- `src_expansion/` — exact scientific source used for the secondary expansion
+- `configs/expanded.json` — fixed expanded-analysis configuration
+- `configs/temporal_blocking.json` — UCI overlap-blocking configuration
+- `results/` — compact headline result tables
+- `tables/frozen/` — manuscript-level tables copied from the completed analysis
+- `tables/derived/` — explicitly labelled secondary/post-hoc descriptive tables
+- `figures/` — six frozen publication figures in PNG/PDF plus figure manifest
+- `provenance/` — completed-analysis metadata and hash-verification records
+- `EVIDENCE_FREEZE_SUMMARY.md` — manuscript evidence-freeze summary
+- `DERIVED_TABLE_METHODS.md` — derivation rules for post-hoc descriptive tables
+- `scripts/verify_public_results.py` — compact numerical verification
+- `docs/` — dataset, methods, source-scope, provenance and reproducibility notes
+
 ## Repository scope
 
 This public repository intentionally excludes:
 
 - the original third-party datasets,
-- the internal 23 GB research archive,
+- the internal ~23 GB research archive,
 - model checkpoints,
+- the complete raw prediction archive,
 - interrupted-run logs,
 - local Windows paths,
 - checkpoint/recovery metadata,
-- and other research-internal files not needed for publication-level verification.
+- and research-internal operational files not needed for publication-level verification.
 
-## Current public package status
+The exact scientific source is included; the large internal archive remains the authoritative record for complete fit-level artifacts.
 
-The current public package contains the fixed analysis metadata, headline processed results, and verification scripts.
+## Evidence freeze
 
-The repository now includes the exact scientific source used for the secondary expansion in `src_expansion/`:
-data restoration, fixed 1D-CNN training, model-fit orchestration, isotonic calibration, APS,
-expanded statistics/figures, temporal-overlap sensitivity, and descriptive supplements.
+The manuscript-facing evidence was frozen on **2026-09-14**. The evidence-freeze package includes completed manuscript tables, six figures, participant-level provenance used for the derived descriptive analyses, and SHA-256 verification records.
 
-The repository includes the exact frozen V1 baseline source in `src/` and the exact
-secondary-expansion scientific source in `src_expansion/`. The baseline modules were copied
-from the archived primary-analysis snapshot rather than reconstructed from the manuscript.
-
-This distinction prevents publishing code that merely approximates the audited implementation.
+No model retraining was performed to create the confidence-gap, model-rank, or overlap-decomposition descriptive tables.
 
 ## Verify the public numeric artifacts
 
@@ -116,10 +139,16 @@ This distinction prevents publishing code that merely approximates the audited i
 python scripts/verify_public_results.py
 ```
 
+This script checks compact headline values. See the evidence-freeze manifests for the broader manuscript-facing artifact hashes.
+
+## Release status
+
+The repository is currently in **pre-release preparation**. A `v1.0.0` GitHub release will be created after final repository checks and then archived on Zenodo. The resulting persistent DOI will be added to the manuscript and `CITATION.cff`.
+
 ## License
 
 Repository-authored code and documentation are released under the MIT License. The original UCI HAR and WISDM datasets are not included and remain subject to their original terms.
 
 ## Citation
 
-Citation metadata are provided in `CITATION.cff`. A Zenodo DOI will be added after the public repository is finalized and archived.
+Citation metadata are provided in `CITATION.cff`. A Zenodo DOI will be added after the `v1.0.0` release is archived.
