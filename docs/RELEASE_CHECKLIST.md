@@ -34,9 +34,9 @@ This checklist defines the final repository state to archive on Zenodo for the m
 
 ## Final pre-release actions
 
-- [ ] Confirm the manuscript's numerical claims still match the frozen public evidence.
-- [ ] Run `python scripts/verify_public_results.py` in a clean environment.
-- [ ] Confirm no accidental private/local files were added since the evidence freeze.
+- [x] Confirm the manuscript's numerical claims still match the frozen public evidence.
+- [x] Run `python scripts/verify_public_results.py` in a clean environment.
+- [x] Confirm no accidental private/local files were added since the evidence freeze.
 - [ ] Create GitHub release/tag `v1.0.0`.
 - [ ] Archive `v1.0.0` on Zenodo.
 - [ ] Record the version DOI in `CITATION.cff`.
