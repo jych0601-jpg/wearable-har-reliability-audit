@@ -4,7 +4,7 @@ title: "Wearable HAR Reliability Audit: Reproducibility Materials"
 type: software
 authors:
   - family-names: Jo
-    given-names: Yechan
+    given-names: YeChan
     affiliation: "Department of Artificial Intelligence, Gachon University"
 repository-code: "https://github.com/jych0601-jpg/wearable-har-reliability-audit"
 version: "1.0.0"
