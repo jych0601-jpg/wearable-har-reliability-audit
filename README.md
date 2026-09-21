@@ -4,7 +4,7 @@ Public reproducibility materials for the manuscript:
 
 **Evaluation Protocol Changes Probability Reliability for New-User Wearable Human Activity Recognition**
 
-Author: **Yechan Jo**  
+Author: **YeChan Jo**  
 Affiliation: Department of Artificial Intelligence, Gachon University
 
 ## Study question
